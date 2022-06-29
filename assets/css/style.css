@@ -131,13 +131,13 @@ a:hover {
   margin-right: 10px; }
 
 #books-container {
-  width: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  max-width: 1100px;
   margin: 0 auto;
   margin-top: 50px;
-  position: relative;
-  right: 28px;
-  /* This aligns the book titles with the top text */
-  /*font-size: 16px;*/
   font-weight: normal;
   text-align: left;
   margin-bottom: 50px; }
@@ -145,6 +145,11 @@ a:hover {
     #books-container {
       width: 90%;
       right: 0; } }
+  #books-container table {
+    width: 72.5%; }
+    @media (max-width: 960px) {
+      #books-container table {
+        width: 100%; } }
   #books-container th {
     padding: 10px 10px 10px 0px; }
 
