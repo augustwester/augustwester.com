@@ -28,8 +28,25 @@ a:hover {
   height: 100px;
   font-weight: bold;
   display: flex;
-  justify-content: space-between;
-  margin: 0 auto; }
+  margin: 0 auto;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex-wrap: nowrap; }
+  @media (max-width: 960px) {
+    #header-section {
+      justify-content: space-evenly; } }
+  #header-section a {
+    line-height: 100px;
+    padding: 0 15px 0 15px; }
+    @media (max-width: 960px) {
+      #header-section a {
+        padding: 0 10px 0 10px;
+        font-size: 13px; } }
+  #header-section a:nth-child(1) {
+    margin-right: auto; }
+    @media (max-width: 960px) {
+      #header-section a:nth-child(1) {
+        margin-right: 0; } }
 
 #content {
   display: flex;
