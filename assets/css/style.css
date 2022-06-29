@@ -137,9 +137,13 @@ a:hover {
   position: relative;
   right: 28px;
   /* This aligns the book titles with the top text */
-  font-size: 16px;
+  /*font-size: 16px;*/
   font-weight: normal;
   text-align: left;
   margin-bottom: 50px; }
+  @media (max-width: 960px) {
+    #books-container {
+      width: 90%;
+      right: 0; } }
   #books-container th {
     padding: 10px 10px 10px 0px; }
