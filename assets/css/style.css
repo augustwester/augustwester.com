@@ -33,14 +33,13 @@ h1, h2, h3 {
 
 p, a {
   font-family: "CMU-Serif", Georgia;
-  /*-webkit-font-smoothing: antialiased;*/
   text-decoration: none;
   color: black; }
 
 a:hover {
   text-decoration: underline; }
 
-.active {
+.active-navigation {
   color: #e22e19; }
 
 #header-section {
@@ -56,25 +55,38 @@ a:hover {
     line-height: 100px;
     margin-right: 30px; }
 
-#intro-container {
+#content {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 1100px;
   margin: 0 auto;
-  margin-top: 100px; }
-
-#intro-image-container {
-  float: left;
-  width: 27.5%; }
-
-#intro-text-container {
-  float: right;
-  width: 72.5%; }
-
-.intro-text {
-  font-size: 20px;
-  line-height: 40px; }
+  margin-top: 100px;
+  margin-bottom: 50px; }
+  @media screen and (max-width: 1200px) {
+    #content {
+      display: block;
+      width: 90%; } }
+  #content #content-image-container {
+    float: left;
+    width: 27.5%; }
+    @media screen and (max-width: 1200px) {
+      #content #content-image-container {
+        float: none;
+        width: 100%;
+        margin-bottom: 40px; } }
+  #content #content-text-container {
+    float: right;
+    width: 72.5%; }
+    @media screen and (max-width: 1200px) {
+      #content #content-text-container {
+        float: none;
+        width: 100%; }
+        #content #content-text-container h1 {
+          text-align: center; } }
+    #content #content-text-container p {
+      font-size: 20px;
+      line-height: 40px; }
 
 .picture {
   max-width: 250px;
