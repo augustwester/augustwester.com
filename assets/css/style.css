@@ -147,3 +147,7 @@ a:hover {
       right: 0; } }
   #books-container th {
     padding: 10px 10px 10px 0px; }
+
+.author-text {
+  font-size: 12px;
+  color: gray; }
