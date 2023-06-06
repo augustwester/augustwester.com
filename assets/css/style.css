@@ -83,9 +83,12 @@ main {
 @media screen and (max-width: 920px) {
   header {
     flex-direction: column;
-    text-align: center; }
+    text-align: center;
+    margin: 0 50px 0 50px;
+    height: 100vh; }
     header #socials {
       justify-content: center; }
 
   main {
-    grid-template-columns: 100%; } }
+    grid-template-columns: 100%;
+    margin-top: 50px; } }
